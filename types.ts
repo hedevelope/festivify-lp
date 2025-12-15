@@ -1,6 +1,6 @@
 export interface GeneratedAsset {
   key: string;
-  data: string | null; // Base64 string
+  data: string | null;
   loading: boolean;
   prompt: string;
   width?: string;
@@ -9,10 +9,4 @@ export interface GeneratedAsset {
 
 export interface AssetState {
   [key: string]: GeneratedAsset;
-}
-
-export enum ThemeColor {
-  RED = 'text-christmas-red',
-  GREEN = 'text-christmas-green',
-  GOLD = 'text-christmas-gold'
 }
